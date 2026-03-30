@@ -24,8 +24,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run tests
-        run: |
-          pytest
+        env:
+          PYTHONPATH: .
+        run: pytest
 
       - name: Setup SSH
         run: |
