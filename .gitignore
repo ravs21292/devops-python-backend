@@ -60,10 +60,10 @@ db.sqlite3-journal
 *.pid
 *.sock
 
-# Environment variables
+# Environment variables (secrets: use .env or .env*.local only — those stay private)
 .env
-.env.*
-*.env
+.env.local
+.env.*.local
 
 # Virtual environments
 penv/
@@ -105,6 +105,9 @@ cython_debug/
 # Logs
 logs/
 *.log
+
+# Node / frontend
+node_modules/
 
 # Temporary files
 tmp/
